@@ -1,18 +1,195 @@
+
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="uk">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>сайт</title>
+    <title>Історія міста Хуст</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f0f5f2;
+            color: #24352e;
+            line-height: 1.7;
+        }
+
+        header {
+            background: linear-gradient(135deg, #14532d, #16a34a);
+            color: white;
+            text-align: center;
+            padding: 65px 20px;
+        }
+
+        header h1 {
+            font-size: 42px;
+            margin: 0;
+        }
+
+        header p {
+            font-size: 18px;
+        }
+
+        nav {
+            background: #123c29;
+            padding: 14px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 12px;
+            font-weight: bold;
+        }
+
+        main {
+            max-width: 900px;
+            margin: 30px auto;
+            padding: 0 18px;
+        }
+
+        section {
+            background: white;
+            padding: 24px;
+            margin-bottom: 22px;
+            border-radius: 14px;
+            box-shadow: 0 4px 15px #0000000d;
+        }
+
+        h2 {
+            color: #15803d;
+        }
+
+        .date {
+            color: #15803d;
+            font-weight: bold;
+        }
+
+        .photo {
+            width: 100%;
+            border-radius: 10px;
+            margin-top: 12px;
+        }
+
+        footer {
+            text-align: center;
+            background: #123c29;
+            color: white;
+            padding: 25px;
+        }
+
+        button {
+            background: #16a34a;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            padding: 12px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #15803d;
+        }
+
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 32px;
+            }
+
+            nav a {
+                display: inline-block;
+                margin: 5px;
+            }
+        }
+    </style>
 </head>
 <body>
 
-    <h1>Привіт</h1>
-    <p>про ХУСТ</p>
+<header>
+    <h1>🏔️ Місто Хуст</h1>
+    <p>Коротка історія міста на Закарпатті</p>
+</header>
 
-    <button onclick="alert('Привіт!')">
-        Нажми меня
-    </button>
+<nav>
+    <a href="#history">Історія</a>
+    <a href="#castle">Замок</a>
+    <a href="#independence">1939 рік</a>
+</nav>
+
+<main>
+    <section id="history">
+        <h2>📜 Історія Хуста</h2>
+        <p>
+            Хуст — мальовниче місто в Закарпатській області України,
+            розташоване біля річок Тиси та Ріки.
+            Його історія пов'язана з торгівлею, давніми укріпленнями
+            та важливими подіями українського державотворення.
+        </p>
+        <p>
+            Територія сучасного Хуста має давню історію.
+            Місто розвивалося біля Замкової гори та було пов'язане
+            із соляним торговельним шляхом.
+        </p>
+    </section>
+
+    <section id="castle">
+        <h2>🏰 Хустський замок</h2>
+        <p>
+            Однією з найвідоміших пам'яток міста є руїни
+            Хустського замку. Його будівництво розпочалося
+            приблизно 1090 року, а фортеця охороняла важливий
+            шлях, яким перевозили сіль із Солотвина.
+        </p>
+        <p>
+            У 1766 році замок зазнав руйнувань через удар
+            блискавки та пожежу. Сьогодні його руїни нагадують
+            про багатовікову історію міста.
+        </p>
+    </section>
+
+    <section id="independence">
+        <h2>🇺🇦 Хуст і Карпатська Україна</h2>
+        <p>
+            У листопаді 1938 року Хуст став столицею автономної
+            Підкарпатської Русі у складі Чехословаччини.
+        </p>
+        <p>
+            <span class="date">15 березня 1939 року</span>
+            в Хусті відбулося засідання Сойму Карпатської України,
+            який проголосив незалежність держави та обрав
+            Августина Волошина її президентом.
+        </p>
+        <p>
+            Ці події назавжди залишили Хуст важливою сторінкою
+            в історії українського національного руху.
+        </p>
+    </section>
+
+    <section>
+        <h2>💚 Хуст сьогодні</h2>
+        <p>
+            Сучасний Хуст — це місто з багатою культурою,
+            мальовничими краєвидами та історичними пам'ятками.
+            Воно є важливою частиною Закарпаття та України.
+        </p>
+
+        <button onclick="alert('Хуст — місто з великою історією! 💚')">
+            Дізнатися цікавинку
+        </button>
+    </section>
+</main>
+
+<footer>
+    <p>© 2026 | Історія міста Хуст</p>
+    <p>Закарпаття, Україна 🇺🇦</p>
+</footer>
 
 </body>
-</html> 
+</html>
+
